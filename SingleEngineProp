@@ -1,0 +1,19 @@
+
+
+// Subclass SingleEngineProp
+public class SingleEngineProp extends AircraftSelector {
+    @Override
+    public void takeoff() {
+        System.out.println("Single-Engine Prop is taking off with one engine.");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("Single-Engine Prop is flying with one engine.");
+    }
+
+    @Override
+    public void land() {
+        System.out.println("Single-Engine Prop is landing with one engine.");
+    }
+}
