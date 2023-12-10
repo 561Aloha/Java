@@ -1,0 +1,19 @@
+// Abstract class AircraftSelector
+public abstract class AircraftSelector {
+    public abstract void takeoff();
+    public abstract void fly();
+    public abstract void land();
+
+
+    public static void main(String[] args) {
+        // The helicopter takes off
+        AircraftSelector helicopter = new Helicopter();
+        helicopter.takeoff();
+
+        AircraftSelector fighterJet= new FighterJet();
+        fighterJet.land();
+
+         AircraftSelector singleengineprop= new SingleEngineProp();
+        singleengineprop.fly();
+    }
+}
